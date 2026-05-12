@@ -1,0 +1,44 @@
+--------------------NUMPY--------------------------
+--> NUMPY stands for Numerical Python 
+--> open source library
+-->faster than list(python) in terms of Speed,Performance and better memory allocation
+
+
+Why NumPy is Faster Than Python Lists
+1. Contiguous Memory Storage
+NumPy arrays store data in one continuous block of memory.
+Python lists store references (pointers) to separate Python objects scattered in memory.
+
+Result:
+-->NumPy accesses data faster
+-->Better CPU cache usage
+-->Less overhead
+
+2. Fixed Data Type
+In NumPy, all elements usually have the same type.
+Why NumPy Uses Less Memory
+-->Python lists store:
+-->object metadata
+-->pointers
+-->type information
+reference counts
+''''''''''''''''''''''Each integer in a Python list is actually a full Python object.''''''''''''''''
+''''''''''''''''''''''NumPy stores only raw binary values.'''''''''''''''''''''''''''''''''''''''''''
+Example:
+Python integer → much larger memory
+NumPy integer → compact fixed-size binary
+
+Result:
+NumPy arrays consume significantly less memory.
+
+Why NumPy Performance Is Better Overall
+Because NumPy:
+uses contiguous memory
+avoids Python object overhead
+uses optimized C/Fortran backend
+supports vectorized computation
+reduces looping overhead
+So operations become:
+faster
+cache-friendly
+memory-efficient
